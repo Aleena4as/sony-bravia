@@ -1,0 +1,62 @@
+{
+   "sliderTop": [
+      {
+         "id": "1",
+         "title": "The world's first TVs with cognitive intelligence.",
+         "subTitle": "For picture and sound you can almost feel.",
+         "imageDesktop": "./assets/images/tvsoundmin.jpg",
+         "imageMobile": "./assets/images/tv-sound-mob.jpg",
+         "buttonText": "Buy Now"
+      },
+      {
+         "id": "2",
+         "title": "The world's first TVs with cognitive intelligence.",
+         "subTitle": "For picture and sound you can almost feel.",
+         "imageDesktop": "./assets/images/tvpicturemin.jpg",
+         "imageMobile": "./assets/images/tv-picture-mob.jpg",
+         "buttonText": "Buy Now"
+      },
+      {
+         "id": "3",
+         "title": "The world's first TVs with cognitive intelligence.",
+         "subTitle": "For picture and sound you can almost feel.",
+         "imageDesktop": "./assets/images/tvcolormin.jpg",
+         "imageMobile": "./assets/images/tv-color-mob.jpg",
+         "buttonText": "Buy Now"
+      },
+      {
+         "id": "4",
+         "title": "The world's first TVs with cognitive intelligence.",
+         "subTitle": "For picture and sound you can almost feel.",
+         "imageDesktop": "./assets/images/tvcoremin.jpg",
+         "imageMobile": "./assets/images/tv-core-mob.jpg",
+         "buttonText": "Buy Now"
+      }
+   ],
+   "sliderBottom": [
+      {
+         "id": "1",
+         "title": "XR Sound",
+         "subTitle": "Powerful sound from the screen, matches pictures precisely",
+         "icon": "./assets/images/xr_sound.svg"
+      },
+      {
+         "id": "2",
+         "title": "XR Picture",
+         "subTitle": "See incredible depth with intense contrast and brightness. ",
+         "icon": "./assets/images/xr_picture.svg"
+      },
+      {
+         "id": "3",
+         "title": "XR Color",
+         "subTitle": "A wide colour spectrum for real-world shades and hues.",
+         "icon": "./assets/images/xr_color.svg"
+      },
+      {
+         "id": "4",
+         "title": "Bravia Core",
+         "subTitle": "Bring the cinematic experience home, enjoy movies included with BRAVIA XR.",
+         "icon": "./assets/images/xr_core.svg"
+      }
+   ]
+}

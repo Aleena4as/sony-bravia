@@ -1,0 +1,107 @@
+.section-tab-slider {
+   // background-color: $black;
+   .multipletab {
+      width: calc(100% - 70px);
+      margin: 0 auto;
+      background: #eee;
+      overflow: hidden;
+      position: relative;
+      &:hover .tab-nav {
+         opacity: 1;
+      }
+      @media (max-width: 767px) {
+         margin-top: 50px;
+      }
+
+      .tab-buttons {
+         display: flex;
+         align-items: flex-start;
+         justify-content: space-between;
+         width: 100%;
+         height: 215px;
+         background-color: $white;
+         padding: 0 92px;
+         & > span {
+            cursor: pointer;
+            background: transparent;
+            width: 261px;
+            position: relative;
+         }
+
+         & > span.active {
+            background: transparent;
+            color: #ddd;
+            position: relative;
+            border-bottom: 5px solid $active-bg;
+            // box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+         }
+      }
+      .tab-content {
+         position: relative;
+         top: 40px;
+         margin-top: -40px;
+
+         & > div {
+            position: absolute;
+            color: #666;
+            font-family: "pt sans", sans-serif;
+         }
+         .tab-content-info {
+            img {
+               width: auto;
+               height: auto;
+            }
+         }
+      }
+      .tab-nav {
+         opacity: 0;
+         transition: all 0.3s linear;
+         -moz-transition: all 0.3s linear;
+         -webkit-transition: all 0.3s linear;
+
+         & > span {
+            position: absolute;
+            top: 50%;
+            cursor: pointer;
+            display: block;
+            height: 35px;
+            width: 35px;
+         }
+         & > span.next {
+            right: 10px;
+            background: $arrow-bg url(.././images/arrow-right.svg) no-repeat;
+            background-position: 5px;
+            opacity: 0.4;
+         }
+         & > span.prev {
+            left: 10px;
+            background: $arrow-bg url(.././images/arrow-left.svg) no-repeat;
+            background-position: 5px;
+            opacity: 0.4;
+         }
+      }
+   }
+}
+
+.bg-black {
+   background: black;
+   height: 500px;
+   position: absolute;
+   top: 80px;
+   width: 100%;
+   @media (max-width: 767px) {
+      height: 404px;
+      max-height: 428px;
+   }
+
+   @media (max-width: 767px) {
+      top: 150px;
+   }
+}
+.column-content {
+   margin: 0 auto;
+   max-width: 1300px;
+   .button-blue{
+      margin-top: 0;
+   }
+}

@@ -1,0 +1,87 @@
+.bravia-specs-section {
+   min-height: 100vh;
+   background-color: $white;
+   padding: 70px 0 60px;
+   @media (max-width: 767px) {
+      padding: 70px 20px 40px;
+   }
+   .specs-title {
+      max-width: 1116px;
+      width: 100%;
+      margin: 0 auto;
+   }
+   .specs-wrap {
+      max-width: 1116px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      @media (max-width: 767px) {
+         flex-direction: column;
+      }
+      .specs-details {
+         border: 1px solid $border-color;
+         padding: 30px 27px;
+         img {
+            width: 302px;
+            height: 178px;
+         }
+         .specs-bookmarks {
+            margin-top: 24px;
+            margin-bottom: 30px;
+            font-family: $SST-Medium;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: $heading-color;
+         }
+         .specifications {
+            li {
+               font-family: $SST-Roman;
+               font-style: normal;
+               font-weight: 400;
+               font-size: 14px;
+               line-height: 20px;
+               color: $heading-color;
+               margin-bottom: 20px;
+               list-style: none;
+               position: relative;
+               padding: 0 0 0 20px;
+               &::before {
+                  content: "";
+                  position: absolute;
+                  left: 0;
+                  top: 6px;
+                  width: 10px;
+                  height: 10px;
+                  background-color: $bullet-color;
+               }
+            }
+         }
+         .button-blue {
+            width: 100%;
+         }
+      }
+   }
+   .view-full-specs {
+      padding: 0;
+      padding-top: 50px;
+      @media (max-width: 767px) {
+         padding: 40px 0;
+      }
+      text-align: center;
+      a {
+         font-family: $SST-Medium;
+         font-style: normal;
+         font-weight: 500;
+         font-size: 15px;
+         line-height: 20px;
+         text-align: center;
+         text-decoration-line: underline;
+         color: $blue;
+      }
+   }
+}

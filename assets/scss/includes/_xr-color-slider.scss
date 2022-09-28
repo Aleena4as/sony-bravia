@@ -1,0 +1,100 @@
+.xr-color-content {
+   // background: $primary-bg;
+   max-width: 1116px;
+   padding: 50px 72px;
+   @media (max-width: 767px) {
+      padding: 30px 20px;
+   }
+   .model-data-wrap {
+      @media (min-width: 768px) {
+         height: 100%;
+         display: flex;
+         align-items: flex-start;
+         flex-direction: column;
+         justify-content: space-evenly;
+         min-height: 500px;
+      }
+     
+   }
+   .color-wrapper {
+      .color-slider {
+         .slick-prev.slick-disabled:before,
+         .slick-next.slick-disabled:before {
+            opacity: 1 !important;
+         }
+         .slick-prev.slick-disabled:before {
+            content: url(.././images/arrow-left.svg);
+         }
+         .slick-next.slick-disabled:before {
+            content: url(.././images/arrow-right.svg);
+         }
+         .slick-next:before {
+            content: url(.././images/arrow-right-blue.svg);
+         }
+         .slick-prev:before {
+            content: url(.././images/arrow-left-blue.svg);
+         }
+         .slick-next {
+            right: unset;
+            left: 40px;
+            @media (min-width: 768px) {
+               left: calc(50% + 95px);
+            }
+         }
+         .slick-prev {
+            right: unset;
+            left: 0;
+            @media (min-width: 768px) {
+               right: unset;
+               left: calc(50% + 60px);
+            }
+         }
+         .slick-prev,
+         .slick-next {
+            top: unset;
+            bottom: 100px;
+            z-index: 9;
+            @media (max-width: 767px) {
+               top: unset;
+               bottom: 50px;
+            }
+         }
+         .color-slider-single {
+            display: flex;
+            align-items: center;
+            gap: 95px;
+            @media (max-width: 767px) {
+               flex-direction: column;
+               gap: 30px;
+            }
+            .colorImg {
+               height: 540px;
+               @media (max-width: 767px) {
+                  height: 465px;
+               }
+            }
+            .slick-initialized .slick-slide {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+
+            .slick-next,
+            .slick-prev {
+               z-index: 5;
+            }
+            .slick-next {
+               right: 15px;
+            }
+            .slick-prev {
+               left: 15px;
+            }
+            .slick-next:before,
+            .slick-prev:before {
+               color: #000;
+               font-size: 26px;
+            }
+         }
+      }
+   }
+}

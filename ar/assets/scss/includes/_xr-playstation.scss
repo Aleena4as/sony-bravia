@@ -1,0 +1,115 @@
+.xr-playstation {
+   background-color: $black;
+   width: 100%;
+   max-width: 1116px;
+   margin: 0 auto;
+   .xr-playstation-content {
+      // background-color: #c00;
+      .xr-playstation-slider-single > div:nth-child(1n + 2) {
+         display: none;
+      }
+      .xr-playstation-slider-single.slick-initialized > div:nth-child(1n + 2) {
+         display: block;
+      }
+      .column {
+         width: 100%;
+         .xr-playstation-slider-single {
+            .slick-slide img {
+               width: 100%;
+            }
+            .slick-prev {
+               left: 95px;
+               z-index: 1;
+               top: unset;
+               bottom: 100px;
+               @media (max-width: 767px) {
+                  bottom: -444px;
+                  left: 20px;
+               }
+               @media (max-width: 400px) {
+                  bottom: -468px;
+               }
+               &:hover:before {
+                  content: url(.././images/arrow-left-blue.svg);
+               }
+            }
+            .slick-next {
+               right: unset;
+               left: 130px;
+               bottom: 100px;
+               top: unset;
+               z-index: 1;
+               @media (max-width: 767px) {
+                  left: 55px;
+                  bottom: -444px;
+               }
+               @media (max-width: 400px) {
+                  bottom: -468px;
+               }
+               &:hover:before {
+                  content: url(.././images/arrow-right-blue.svg);
+               }
+            }
+            .slick-prev.slick-disabled:before,
+            .slick-next.slick-disabled:before {
+               opacity: 0.6;
+            }
+            .slick-prev.slick-disabled:before {
+               content: url(.././images/arrow-left.svg);
+            }
+            .slick-next.slick-disabled:before {
+               content: url(.././images/arrow-right.svg);
+            }
+            .slick-next:before {
+               opacity: 1;
+               content: url(.././images/arrow-right.svg);
+            }
+            .slick-prev:before {
+               opacity: 1;
+               content: url(.././images/arrow-left.svg);
+            }
+         }
+      }
+      .xr-playstation-slider-nav h3 span {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+      }
+
+      .xr-playstation-slider-nav .slick-slide {
+         cursor: pointer;
+      }
+
+      .slick-slide.is-active h3 {
+         color: #c00;
+         background-color: #fff;
+      }
+      .xr-playstation-slider-nav {
+         width: 641px;
+         height: 400px;
+         background-color: $secondary-bg;
+         padding: 80px 74px;
+         position: absolute;
+         bottom: 0;
+         right: 0;
+
+         @media (max-width: 767px) {
+            width: auto;
+            height: auto;
+            padding: 30px 20px 40px;
+            position: unset;
+            bottom: 0;
+            right: unset;
+         }
+
+         .slick-next,
+         .slick-prev {
+            display: none !important;
+         }
+      }
+      .model.para {
+         margin-bottom: 0;
+      }
+   }
+}

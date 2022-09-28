@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'SST-Medium';
+    src: url('SST-Medium.woff2') format('woff2'),
+        url('SST-Medium.woff') format('woff'),
+        url('SST-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SST-Roman';
+    src: url('SST-Roman.woff2') format('woff2'),
+        url('SST-Roman.woff') format('woff'),
+        url('SST-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
